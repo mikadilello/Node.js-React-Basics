@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>React.js External JSON</title>
+   </head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+	  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+<body>
+  <h1>Cool Websites</h1>
+  <div>Here is my React.js web application. It shows information about websites that I think are cool.</div>
+  <div id="webApp"></div>
+
+  <script type="text/babel">
+  "use strict";
+
+    function ProjectList(props) {
+      return <div>
+        <ol>
+          { 
+
+          props.list.map(
+          (item, index) => (
+          <li key={index}>
+            <a href={item.link} target="_blank">
+              {item.name}
+            </a>
+            <p>{item.desc}</p>
+          </li>
+          )
+        )
+        }
+      </ol>
+    </div>;
+}
+
+
+  $.getJSON( "anything", function(jsonFromJquery) {
+  ReactDOM.render(
+    <ProjectList list={jsonFromJquery} />,
+    document.getElementById("webApp")
+    );
+    }
+    );
+
+  </script>
+</body>
+</html>

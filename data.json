@@ -1,0 +1,17 @@
+[
+  {
+    "name": "This Cat Does Not Exist",
+    "link":"https://thiscatdoesnotexist.com/",
+    "desc":"A website that uses AI to generate a cat that has never been seen before. Every time you visit, it generates a new cat."
+  },
+  {
+    "name": "Archive.org: Internet Archive",
+    "link":"https://archive.org/",
+    "desc":"Archive.org has the Wayback Machine, which archives webpages and is really helpful for finding a snapshot of a site that isn't available anymore, or doesn't work anymore. It also has an archive of free books, movies, software, etc."
+  },
+  {
+    "name": "Butter",
+    "link":"https://imgur.com/a/qu1Tq",
+    "desc":"This one is not a website, just an album on imgur of knockoffs of 'I Can't Believe it's not Butter!'. It makes me laugh every time I look at it."
+  }
+]
